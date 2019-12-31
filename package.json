@@ -1,0 +1,32 @@
+{
+  "name": "increment-string-id",
+  "version": "1.0.2",
+  "description": "自增ID转换成字符串ID",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "shx rm -rf dist",
+    "test": "jest --config jestconfig.json",
+    "prepublishOnly": "npm run test",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mervynyang/increment-string-id.git"
+  },
+  "keywords": [],
+  "author": "MervynYang",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.21",
+    "cpr": "^3.0.1",
+    "jest": "^24.9.0",
+    "shx": "^0.3.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  }
+}
