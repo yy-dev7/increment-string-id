@@ -1,6 +1,6 @@
 {
   "name": "increment-string-id",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "自增ID转换成字符串ID",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
