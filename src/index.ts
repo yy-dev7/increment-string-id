@@ -25,6 +25,10 @@ class IncrementStringId {
     return this.seed
   }
 
+  setSeed(seed: number) {
+    this.seed = seed
+  }
+
   private randomStr(length: number = 0) {
     let text = ''
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'

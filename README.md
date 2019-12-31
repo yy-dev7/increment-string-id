@@ -16,7 +16,15 @@ import IncrementStringId from 'increment-string-id'
 const seed = 0
 const size = 4
 const instance = new IncrementStringId(seed, size)
+
+// 生成一个ID
 instance.generateId()
+
+// 设置 seed 值
+instance.setSeed(1000)
+
+// 获取当前的 seed
+instance.getSeed()
 ```
 
 构造函数参数
@@ -25,6 +33,14 @@ instance.generateId()
 |-|-|-|
 |seed|0|递增的种子
 |size|4|字符串id的最小长度
+
+实例方法说明
+
+|名称|参数类型|返回值类型|说明
+|-|-|-|-|
+|generateId|无|string|生成一个ID
+|setSeed|number|无|设置 seed 值
+|getSeed|无|number|获取当前的 seed
 
 测试
 
